@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, rgb(238, 105, 238), rgb(109, 1, 155));
+}
+
+main{
+    width: 40%;
+    margin: 5vh auto;
+    padding: 2vw;
+    background-color: lightgray;
+    border-radius: 1vw;
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.6));
+    border: 0.15vw solid black;
+}
+
+#affichage{
+    width: 95%;
+    background-color: white;
+    overflow: hidden;
+    height: 8vw;
+    margin: 2vh auto 6vh auto;
+    border-radius: 2vw;
+    text-align: right;
+    padding: 0 1vw;
+    font-family: 'Red Hat Mono', monospace;
+    font-size: 3vw;
+    border: 0.2vw solid black;
+}
+
+button{
+    height: 5vw;
+    font-size: 2vw;
+    background-color: darkgrey;
+    border: 0.2vw black outset;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.6));
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+button:active{
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.8));
+    border: black inset;
+}
+
+#bresult{
+    background-color: rgb(100, 18, 177) ;
+    grid-area: 7/3/7/5;
+}
+
+#bcancel{
+    background-color: rgb(184, 3, 3);
+}
+
+#breturn{
+    background-color: rgb(108, 155, 86);
+}
+
+.number{
+    background-color: rgb(223, 223, 223);
+}
+
+#boutons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5vw;
+}
+
+#result{
+    font-weight: bold ;
+}
+
+.operate{
+    background-color: grey;
+}
